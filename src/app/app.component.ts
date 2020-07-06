@@ -14,7 +14,7 @@ export class AppComponent implements OnInit, AfterViewInit {
 
     WebViewer({
       path: '../lib',
-      initialDoc: '../files/webviewer-demo-annotated.pdf'
+      initialDoc: '../files/sfd.pdf'
     }, this.viewer.nativeElement).then(instance => {
       this.wvInstance = instance;
 
@@ -55,8 +55,8 @@ export class AppComponent implements OnInit, AfterViewInit {
     rectangle.Height = 250;
     rectangle.StrokeThickness = 5;
     rectangle.Author = annotManager.getCurrentUser();
-    annotManager.addAnnotation(rectangle);
-    annotManager.drawAnnotations(rectangle.PageNumber);
+    //annotManager.addAnnotation(rectangle);
+    //annotManager.drawAnnotations(rectangle.PageNumber);
     // see https://www.pdftron.com/api/web/WebViewer.html for the full list of low-level APIs
   }
 }
