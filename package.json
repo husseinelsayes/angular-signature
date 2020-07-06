@@ -1,9 +1,10 @@
+
 {
-  "name": "webviewer-angular-sample",
+  "name": "angular-signature",
   "version": "1.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node server.js",
     "build": "ng build",
     "build-prod": "ng build --prod",
     "test": "ng test",
@@ -23,6 +24,7 @@
     "@angular/router": "^8.2.5",
     "@pdftron/webviewer": "^6.2.3",
     "core-js": "^2.5.4",
+    "express": "^4.17.1",
     "rxjs": "^6.5.3",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
